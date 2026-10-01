@@ -1,0 +1,336 @@
+.qqovo-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  min-height: 0;
+  padding: 20px 24px 28px;
+  box-sizing: border-box;
+}
+
+.qqovo-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qqovo-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.qqovo-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-main, #f8fafc);
+}
+
+.qqovo-sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+}
+
+.qqovo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.qqovo-tab {
+  border: 1px solid color-mix(in srgb, var(--color-text-main, #f8fafc) 12%, transparent);
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 4%, transparent);
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.95));
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.qqovo-tab.is-active {
+  background: color-mix(in srgb, var(--color-primary, #14b8a6) 22%, transparent);
+  border-color: color-mix(in srgb, var(--color-primary, #14b8a6) 55%, transparent);
+  color: var(--color-text-main, #f8fafc);
+}
+
+.qqovo-search-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.qqovo-search-row input {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--color-text-main, #f8fafc) 12%, transparent);
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 5%, transparent);
+  color: var(--color-text-main, #f8fafc);
+  padding: 0 12px;
+  outline: none;
+}
+
+.qqovo-search-row button,
+.qqovo-song-actions button {
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 14px;
+  cursor: pointer;
+  background: var(--color-primary, #14b8a6);
+  color: #042f2e;
+  font-weight: 600;
+}
+
+.qqovo-song-actions button.ghost {
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 8%, transparent);
+  color: var(--color-text-main, #f8fafc);
+}
+
+.qqovo-status {
+  min-height: 18px;
+  font-size: 12px;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+}
+
+.qqovo-status.is-error {
+  color: #f87171;
+}
+
+.qqovo-list {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 4px;
+}
+
+.qqovo-song {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.qqovo-song:hover {
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 6%, transparent);
+}
+
+.qqovo-cover {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 8%, transparent);
+}
+
+.qqovo-meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.qqovo-song-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-main, #f8fafc);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.qqovo-song-artist {
+  font-size: 12px;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.qqovo-song-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.qqovo-empty {
+  padding: 48px 12px;
+  text-align: center;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+  font-size: 13px;
+}
+
+.qqovo-search-row button.ghost {
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 8%, transparent);
+  color: var(--color-text-main, #f8fafc);
+}
+
+.qqovo-fm-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qqovo-fm-modes {
+  max-height: 84px;
+  overflow: auto;
+}
+
+.qqovo-chart-grid {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  padding-right: 4px;
+  align-content: start;
+}
+
+.qqovo-chart-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  border: 1px solid color-mix(in srgb, var(--color-text-main, #f8fafc) 10%, transparent);
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 4%, transparent);
+  border-radius: 14px;
+  padding: 10px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.qqovo-chart-card:hover {
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 8%, transparent);
+}
+
+.qqovo-chart-card.is-hot {
+  border-color: color-mix(in srgb, var(--color-primary, #14b8a6) 45%, transparent);
+  background: color-mix(in srgb, var(--color-primary, #14b8a6) 12%, transparent);
+}
+
+.qqovo-chart-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  background: color-mix(in srgb, var(--color-text-main, #f8fafc) 8%, transparent);
+}
+
+.qqovo-chart-cover--empty {
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+}
+
+.qqovo-chart-name {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--color-text-main, #f8fafc);
+}
+
+.qqovo-chart-group {
+  font-size: 11px;
+  color: var(--color-text-secondary, rgba(148, 163, 184, 0.9));
+}
+
+.qqovo-player-dl {
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-main, #f8fafc);
+  background: color-mix(in srgb, var(--color-primary, #14b8a6) 22%, transparent);
+}
+
+.qqovo-player-dl:hover {
+  background: color-mix(in srgb, var(--color-primary, #14b8a6) 36%, transparent);
+}
+
+.qqovo-dl-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.qqovo-dl-panel {
+  width: min(360px, calc(100vw - 32px));
+  border-radius: 16px;
+  padding: 16px;
+  background: color-mix(in srgb, #0f172a 92%, transparent);
+  border: 1px solid color-mix(in srgb, #f8fafc 12%, transparent);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qqovo-dl-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.qqovo-dl-sub,
+.qqovo-dl-tip {
+  font-size: 12px;
+  color: rgba(148, 163, 184, 0.95);
+  line-height: 1.4;
+}
+
+.qqovo-dl-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.qqovo-dl-item,
+.qqovo-dl-cancel {
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, #f8fafc 12%, transparent);
+  background: color-mix(in srgb, #f8fafc 6%, transparent);
+  color: #f8fafc;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.qqovo-dl-item:hover:not(:disabled) {
+  background: color-mix(in srgb, #14b8a6 28%, transparent);
+  border-color: color-mix(in srgb, #14b8a6 50%, transparent);
+}
+
+.qqovo-dl-item:disabled,
+.qqovo-dl-cancel:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+/* 本地收藏心形高亮（拦截宿主酷狗云收藏） */
+button[title='收藏'].qqovo-local-fav-on,
+button[title='收藏'][data-qqovo-local-fav='1'] {
+  color: #ef4444 !important;
+}
+button[title='收藏'].qqovo-local-fav-on svg,
+button[title='收藏'][data-qqovo-local-fav='1'] svg {
+  color: #ef4444 !important;
+  fill: currentColor !important;
+}

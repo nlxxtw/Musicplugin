@@ -1,0 +1,22 @@
+{
+  "name": "qqovo Music 插件源",
+  "homepage": "https://github.com/nlxxtw/Musicplugin",
+  "plugins": [
+    {
+      "id": "qqovo-music",
+      "name": "QQ / 网易 / 汽水 (qqovo)",
+      "description": "QQ / 网易云 / 汽水搜歌、漫游、排行榜与播链（EchoMusic 本地插件）",
+      "author": "md3Music → EchoMusic",
+      "path": "",
+      "repo": "https://github.com/nlxxtw/Musicplugin",
+      "homepage": "https://github.com/nlxxtw/Musicplugin",
+      "tags": [
+        "audio-source",
+        "lyrics",
+        "qq",
+        "netease",
+        "qishui"
+      ]
+    }
+  ]
+}

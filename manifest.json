@@ -1,0 +1,25 @@
+{
+  "id": "qqovo-music",
+  "name": "QQ / 网易 / 汽水 (qqovo)",
+  "version": "1.3.7",
+  "description": "修复搜索空结果：改回 net.request + Electron CookieJar（勿用 fetch omit）；QQ/网易/汽水搜歌。",
+  "author": "md3Music → EchoMusic",
+  "icon": "icon.svg",
+  "main": "index.js",
+  "style": "style.css",
+  "runtime": {
+    "miniPlayer": false,
+    "desktopLyric": false
+  },
+  "requires": {
+    "echoMusicVersion": ">=2.3.1"
+  },
+  "capabilities": {
+    "audioSource": true,
+    "lyrics": true,
+    "unrestrictedNetwork": true,
+    "webServer": true,
+    "localFiles": true,
+    "kugouApi": false
+  }
+}

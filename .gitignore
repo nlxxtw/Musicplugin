@@ -1,0 +1,15 @@
+﻿# local / build junk
+cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# decrypt / probe scratch files
+_test_*
+_probe_*
+_decrypt_mod.mjs
+_test_auth.txt
+*.m4a
+*.mp4
+*.enc
+*.dec
