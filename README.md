@@ -6,12 +6,9 @@ Repo: https://github.com/nlxxtw/Musicplugin
 
 1. EchoMusic -> Plugin Manager -> Plugin Sources -> add: github:nlxxtw/Musicplugin
 2. Install QQ/NetEase/Qishui (qqovo); host checks updates via manifest version
-3. China mirror: install GitHub Accelerator plugin, set mirror to https://github.19492035.xyz
+3. Optional: install a GitHub Accelerator plugin if downloads are slow in your network
 
 Online update uses echo-plugins.json (NOT Actions). Actions only packages Release zip.
-
-Manual accelerated zip:
-https://github.19492035.xyz/https://github.com/nlxxtw/Musicplugin/archive/refs/heads/main.zip
 
 ## Release (maintainer)
 

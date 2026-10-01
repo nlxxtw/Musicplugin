@@ -63,12 +63,6 @@ jobs:
           body: |
             ## qqovo-music ${{ steps.meta.outputs.version }}
 
-            EchoMusic 安装：插件管理 → 添加插件源 `github:nlxxtw/Musicplugin` → 安装/更新。
-
-            国内下载可走加速（整仓 zip 示例）：
-            `https://github.19492035.xyz/https://github.com/nlxxtw/Musicplugin/archive/refs/heads/main.zip`
-
-            Release 资源也可经同前缀加速：
-            `https://github.19492035.xyz/https://github.com/nlxxtw/Musicplugin/releases/download/${{ steps.meta.outputs.tag }}/qqovo-music-${{ steps.meta.outputs.version }}.zip`
+            EchoMusic: 插件管理 → 添加插件源 `github:nlxxtw/Musicplugin` → 安装/更新。
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
